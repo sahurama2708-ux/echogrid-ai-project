@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://echogrid-ai-project-1.onrender.com/";
+
+const API_BASE_URL = "https://echogrid-ai-project-1.onrender.com";
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
@@ -24,7 +25,8 @@ export const predictImage = async (imageFile) => {
   formData.append('file', imageFile);
 
   try {
-    const response = await axios.post(`${API_BASE_URL}/predict`, formData, {
+
+    const response = await api.post('/predict', formData, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },
