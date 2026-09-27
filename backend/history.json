@@ -1,0 +1,47 @@
+{
+    "total_scanned": 7,
+    "cracks_detected": 2,
+    "high_risk": 1,
+    "safe_structures": 5,
+    "timestamps": [
+        "10:00:00",
+        "11:00:00",
+        "12:00:00",
+        "13:00:00",
+        "14:00:00",
+        "18:58:20",
+        "19:02:07"
+    ],
+    "stress_levels": [
+        40,
+        55,
+        60,
+        45,
+        70,
+        50,
+        28
+    ],
+    "cracks_graph": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+    ],
+    "logs": [
+        {
+            "time": "19:02:07",
+            "result": "Normal Structure",
+            "risk": "Safe / Low Risk",
+            "stress": "28%"
+        },
+        {
+            "time": "18:58:20",
+            "result": "Normal Structure",
+            "risk": "Safe / Low Risk",
+            "stress": "50%"
+        }
+    ]
+}

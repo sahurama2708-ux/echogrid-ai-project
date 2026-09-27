@@ -1,0 +1,6 @@
+node_modules/
+dataset/
+__pycache__/
+venv/
+.env/
+*.h5

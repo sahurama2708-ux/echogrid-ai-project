@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-dark: #070b14;
+    --bg-card: #0d1527;
+    --border-card: #172342;
+  }
+  body {
+    background-color: var(--bg-dark);
+    color: #f1f5f9;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+}
+
+.bg-darkBg { background-color: #070b14; }
+.bg-cardBg { background-color: #0d1527; }
+.border-cardBorder { border-color: #172342; }
