@@ -12,9 +12,49 @@
     background-color: var(--bg-dark);
     color: #f1f5f9;
     font-family: system-ui, -apple-system, sans-serif;
+    overflow-x: hidden; /* Mobile par horizontal scrolling rokne ke liye */
   }
 }
 
 .bg-darkBg { background-color: #070b14; }
 .bg-cardBg { background-color: #0d1527; }
 .border-cardBorder { border-color: #172342; }
+
+/* Custom Media Queries & Responsive Utilities */
+@layer utilities {
+  /* Mobile aur Desktop ke liye responsive container */
+  .responsive-container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 640px) {
+    .responsive-container {
+      max-width: 640px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .responsive-container {
+      max-width: 1024px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  /* Mobile ke liye touch friendly buttons aur cards */
+  @media (max-width: 768px) {
+    .mobile-stack {
+      flex-direction: column !important;
+    }
+    
+    .mobile-full-width {
+      width: 100% !important;
+    }
+  }
+}
