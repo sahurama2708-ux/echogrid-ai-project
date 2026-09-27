@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+tensorflow
+opencv-python
+pillow
+numpy
+pymongo
+python-dotenv
+
+python-multipart
